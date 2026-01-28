@@ -21,12 +21,6 @@ The executable will be at: `bin\Release\net10.0\win-x64\publish\BluetoothAudioCo
 dotnet build -c Release
 ```
 
-**Other platforms:**
-- Windows ARM64: `dotnet publish -c Release -r win-arm64`
-- Linux x64: `dotnet publish -c Release -r linux-x64`
-- macOS (Intel): `dotnet publish -c Release -r osx-x64`
-- macOS (Apple Silicon): `dotnet publish -c Release -r osx-arm64`
-
 # License
 
 MIT License
