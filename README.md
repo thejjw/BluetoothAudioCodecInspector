@@ -8,7 +8,24 @@ The usage should be self-explanatory.
 
 # Build
 
-Standard .NET 6 SDK is required. Then just run `dotnet build -c Release`.
+Standard .NET 10 SDK is required.
+
+**For single-file executable:**
+```
+dotnet publish -c Release -r win-x64
+```
+The executable will be at: `bin\Release\net10.0\win-x64\publish\BluetoothAudioCodecInspector.exe`
+
+**For regular build:**
+```
+dotnet build -c Release
+```
+
+**Other platforms:**
+- Windows ARM64: `dotnet publish -c Release -r win-arm64`
+- Linux x64: `dotnet publish -c Release -r linux-x64`
+- macOS (Intel): `dotnet publish -c Release -r osx-x64`
+- macOS (Apple Silicon): `dotnet publish -c Release -r osx-arm64`
 
 # License
 
